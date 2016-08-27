@@ -32,7 +32,7 @@
 
 - `GET /api/events`
   - Used in profile page
-  - includes query param for only selecting events on currently viewed month
+  - includes query params to refine date selection
 - `GET /api/applications/:application_id/events`
   - Retrieves events for a single application
 - `POST /api/applications/:application_id/events`
