@@ -23,7 +23,8 @@ column name      | data type | details
 -----------------|-----------|-----------------------
 id               | integer   | not null, primary key
 title            | string    | not null
-description      | string    |
+date_time        | string    | not null
+notes            | string    |
 application_id   | string    | not null, foreign key (references application), indexed
 
 ## contacts
