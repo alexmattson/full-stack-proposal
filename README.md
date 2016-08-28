@@ -1,4 +1,4 @@
-# Job Logged
+![logo.png](https://s13.postimg.org/lnbhemlav/logo.png)
 
 [Heroku link][heroku]
 
@@ -14,7 +14,6 @@ Managing all the intricacies of the job search process can be difficult; this si
 - [ ] Event scheduling and managing on application page
 - [ ] Events will automatically be pushed to calander on Profile page
 - [ ] Statistics tracking the number of applications sent, responses received, and offers received
-- [ ] Autocomplete search feature
 - [ ] Production README
 
 ## Design Docs
@@ -51,72 +50,84 @@ Managing all the intricacies of the job search process can be difficult; this si
 - [ ] Seed users
 - [ ] Review phase 1
 
-### Phase 2: Notes Model, API, and components (2 days)
+### Phase 2: Applications Model, API, and components (2 days)
 
-**Objective:** Notes can be created, read, edited and destroyed through
+**Objective:** Applications can be created, read, edited and destroyed through
 the API.
 
-- [ ] `Note` model
+- [ ] `Application` model
 - [ ] Seed database with a small amount of test data
-- [ ] CRUD API for notes (`NotesController`)
-- [ ] JBuilder views for notes
-- Note components and respective Redux loops
-  - [ ] `NotesIndex`
-  - [ ] `NoteIndexItem`
-  - [ ] `NoteForm`
-- [ ] Autosave notes feature
-- [ ] Style notes components
-- [ ] Seed notes
+- [ ] CRUD API for applications (`ApplicationsController`)
+- [ ] JBuilder views for applications
+- Application components and respective Redux loops
+  - [ ] `ApplicationsIndex`
+  - [ ] `ApplicationIndexItem`
+  - [ ] `ApplicationNewForm`
+  - [ ] `ApplicationUpdateForm`
+  - [ ] `ApplicationRejectForm`
+  - [ ] `ApplicationOfferForm`
+- [ ] Style applications components
+- [ ] Seed sample application
 
-### Phase 3: Notebooks (2 day)
+### Phase 3: Events (2 days)
 
-**Objective:** Notes belong to Notebooks that can be created, read, edited and destroyed through the API.
+**Objective:** Events belong to an Application and can be created, read, edited and destroyed through the API.
 
-- [ ] `Notebook` model
+- [ ] `Event` model
 - [ ] Seed database with a small amount of test data
-- [ ] CRUD API for notes (`NotebooksController`)
-- [ ] JBuilder views for notebooks
-- [ ] Adding notes requires a notebook
-- [ ] Moving notes between notebooks
-- [ ] Viewing notes by notebook
-- [ ] Style notebook components
-- [ ] Seed notebooks
+- [ ] CRUD API for events (`EventsController`)
+- [ ] JBuilder views for events
+- [ ] Adding events requires an application
+- [ ] Calendar on profile page
+- [ ] Adding an event on an application adds event to calendar
+- [ ] Style event components
+- [ ] Seed sample events
 
-### Phase 4: Tags (1 days)
+### Phase 4: Contacts (1 day)
 
-**Objective:** Notes can be tagged with multiple tags, and tags are searchable.
+**Objective:** Application has a contact and can be created, read and edited.
 
-- [ ] `Tag` model and `Taggings` join table
-- [ ] Fetching tags for notes
-- [ ] Adding tags to notes
-- [ ] Searching notes by tag
-- [ ] Style search & tag components
-- [ ] Seed tags with seed data
+- [ ] `Contact` model
+- [ ] Adding contact to applications
+- [ ] Style contact components
+- [ ] Seed sample contact
 
-### Phase 5: Allow Complex Styling in Notes (1 days, W2 Th 6pm)
+### Phase 5: Charts (1 day)
 
-**objective:** Allow rich text editing of notes.
+**objective:** Charts for Application statistics.
 
-- [ ] Integrate `react-quill` (based on Quill.js).
-- [ ] Rails helpers to sanitize HTML before rendering.
-- [ ] Style Quill components.
-- [ ] Add Quill styling to seeded notes
+- [ ] Integrate [ChartJS][ChartJS]
+- [ ] Home page chart tracking applications sent over time.
+- [ ] Profile page Charts
+  + [ ] Applications Sent
+  + [ ] Responses Received
+  + [ ] Offers Received
+- [ ] Add styling to charts
 
-### Phase 6: - Pagination / infinite scroll for Notes Index (1 day, W2 F 6pm)
+[ChartJS]:http://www.chartjs.org/
 
-**objective:** Add infinite scroll to Notes Index
+### Phase 6: Search (0.5 days)
 
-- [ ] Paginate Notes Index API to send 20 results at a time
-- [ ] Append next set of results when user scrolls and is near bottom
-- [ ] Style scroll components and transitions
-- [ ] Ensure seed data demonstrates infinite scroll
+**objective:** Auto complete search feature for application.
+
+- [ ] Integrate [EasyAutocomplete][EasyAutocomplete]
+- [ ] Style Search components.
+
+[EasyAutocomplete]:http://easyautocomplete.com/
+
+
+### Phase 6: - Final Styling integration (0.5 days)
+
+**objective:** Ensure every component is integrated well with each other on the site.
+
+- [ ] Review styling.
 
 ### Bonus Features (TBD)
 - [ ] Emphasis on simple yet engaging animated transition elements throughout the site similar to [ChartJS][ChartJS]
 - [ ] Make charts comparative to other applicants
 - [ ] Notifications for upcoming events
-- [ ] “Offers page” to track and manage open offers
 - [ ] Gmail integration to allow a user to see all emails from the email listed as the contact for the application
+- [ ] “Offers page” to track and manage open offers
 - [ ] Market salary calculation through payscale api
 - [ ] Resume uploading and management system
 
