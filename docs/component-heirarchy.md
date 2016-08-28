@@ -1,22 +1,33 @@
-## Component Heirarchy
+## Component Hierarchy
 
 **AuthFormContainer**
- - AuthForm
+  - AuthForm
 
 **HomeContainer**
- - Home
-  + ApplicationVolume
-  + Buttons
-  + Applications
- - Sidebar
+  - Home
+    + ApplicationVolume
+    + Buttons
+      * NewApplication
+      * UpdateApplication
+      * RejectApplication
+      * OfferApplication
+    + Applications
+  - Sidebar
 
 **ApplicationContainer**
- - NotesHeader
-  * NoteIndex
+  - Application
+   + Header
+   + Contact
+   + Events
+
+**ProfileContainer**
+  - Profile
+    + Header
+    + Calendar
 
 **Search**
 
-**NotebookSearch**
+**ApplicationSearch**
  + AutoSearch
  * AutoSearchResults
 
@@ -27,13 +38,6 @@
 | "/sign-up" | "AuthFormContainer" |
 | "/sign-in" | "AuthFormContainer" |
 | "/home" | "HomeContainer" |
-| "/home/new-application" | "NewApplicationContainer" |
-| "/home/update-application" | "UpdateContainer" |
-| "/home/rejected" | "RejectedContainer" |
-| "/home/offer" | "OfferContainer" |
-| "/home/application/:applicationId" | "ApplicationContainer" |
-| "/home/application/update-application" | "UpdateContainer" |
-| "/home/application/rejected" | "RejectedContainer" |
-| "/home/application/offer" | "OfferContainer" |
+| "/application/:applicationId" | "ApplicationContainer" |
 | "/profile" | "ProfileContainer" |
 | "/search" | "Search" |
