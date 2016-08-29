@@ -20,6 +20,8 @@
    + Progress
    + Contact
    + Events
+    * NewEvent
+    * UpdateEvent
 
 **ProfileContainer**
   - Profile
@@ -45,4 +47,7 @@
 | "/application/:applicationId/update-application" | "UpdateApplication" |
 | "/application/:applicationId/reject-application" | "RejectApplication" |
 | "/application/:applicationId/offer-application" | "OfferApplication" |
+| "/application/:applicationId/offer-application" | "OfferApplication" |
+| "/application/:applicationId/events" | "NewEvent" |
+| "/application/:applicationId/events/:event_id" | "UpdateEvent" |
 | "/profile" | "ProfileContainer" |
