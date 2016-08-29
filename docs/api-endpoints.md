@@ -17,7 +17,6 @@
 
 - `POST /api/session`
 - `DELETE /api/session`
-- `GET /api/session`
 
 ### Applications
 
@@ -33,8 +32,6 @@
 - `GET /api/events`
   - Used in profile page
   - includes query params to refine date selection
-- `GET /api/applications/:application_id/events`
-  - Retrieves events for a single application
 - `POST /api/applications/:application_id/events`
   - if event doesn't already exist, it will be created
 - `PATCH /api/applications/:application_id/events/:event_id`

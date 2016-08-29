@@ -4,11 +4,11 @@
     "id": 1,
     "username": "sample-user"
   },
-  "forms": {
-    "signUp": {"errors": []},
-    "logIn": {"errors": []},
-    "Application": {"errors": []},
-    "Event": {"errors": []}
+  "errors": {
+    "signUp": [],
+    "logIn": [],
+    "Application": [],
+    "Event": []
   },
   "application": {
     "1": {
