@@ -12,7 +12,7 @@ Managing all the intricacies of the job search process can be difficult; this si
 - [ ] New account creation, login, and guest/demo login
 - [ ] Application CRUD cycle
 - [ ] Event scheduling and managing on application page
-- [ ] Events will automatically be pushed to calander on Profile page
+- [ ] Events will automatically be pushed to calendar on Profile page
 - [ ] Statistics tracking the number of applications sent, responses received, and offers received
 - [ ] Production README
 
@@ -69,7 +69,7 @@ the API.
 - [ ] Style applications components
 - [ ] Seed sample application
 
-### Phase 3: Events (2 days)
+### Phase 3: Events Model, API, and components (2 days)
 
 **Objective:** Events belong to an Application and can be created, read, edited and destroyed through the API.
 

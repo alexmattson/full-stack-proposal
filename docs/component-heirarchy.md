@@ -27,8 +27,6 @@
     + Calendar
 
 **Search**
-
-**ApplicationSearch**
  + AutoSearch
  * AutoSearchResults
 
@@ -39,6 +37,12 @@
 | "/sign-up" | "AuthFormContainer" |
 | "/sign-in" | "AuthFormContainer" |
 | "/home" | "HomeContainer" |
+| "/home/new-application" | "NewApplication" |
+| "/home/update-application" | "UpdateApplication" |
+| "/home/reject-application" | "RejectApplication" |
+| "/home/offer-application" | "OfferApplication" |
 | "/application/:applicationId" | "ApplicationContainer" |
+| "/application/:applicationId/update-application" | "UpdateApplication" |
+| "/application/:applicationId/reject-application" | "RejectApplication" |
+| "/application/:applicationId/offer-application" | "OfferApplication" |
 | "/profile" | "ProfileContainer" |
-| "/search" | "Search" |
