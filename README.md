@@ -123,7 +123,7 @@ the API.
 - [ ] Review styling.
 
 ### Bonus Features (TBD)
-- [ ] Emphasis on simple yet engaging animated transition elements throughout the site similar to [ChartJS][ChartJS]
+- [ ] Emphasis on simple yet engaging animated transition elements throughout the site similar to [ChartJS][ChartJS2]
 - [ ] Make charts comparative to other applicants
 - [ ] Notifications for upcoming events
 - [ ] Gmail integration to allow a user to see all emails from the email listed as the contact for the application
@@ -131,4 +131,4 @@ the API.
 - [ ] Market salary calculation through payscale api
 - [ ] Resume uploading and management system
 
-[ChartJS]: CharJShttp://www.chartjs.org/
+[ChartJS2]: CharJShttp://www.chartjs.org/
